@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Shared CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+    color: #ffc200;
+}
+
+.title-box{
+    max-width: 900px;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.title-box h2{
+    font-size: 75px;
+}
+
+.title-box p{
+    font-size: 22px;
+    color: #333333;
+}
+
+.title-box .color-secondary{
+    color: #333333;
+}
+
+ul{
+    list-style: none;
+}
+
+a, .btn{
+    text-decoration: none;
+    transition: .2s;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    border: none;
+    display: inline-block;
+    background: #ffc200;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px 50px;
+}
+
+a:hover, .btn:hover{
+    color: #b0e6ff!important;
+}
+
+.btn:hover{
+    background: #ff62d5;
+}
+
+
+/* Header CSS */
+header{
+    background: url(imgs/banner_bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+header nav ul{
+    gap: 50px;
+}
+
+header nav ul li a{
+    font-size: 22px;
+    color: #fff;
+}
+
+header .banner-contents{
+    width: 620px;
+    margin: 140px 0;
+    margin-left: auto;
+}
+
+header .banner h1{
+    font-size: 124px;
+}
+
+header .banner p{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+
+/* Best Seller CSS */
+.best-seller{
+    max-width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.best-seller .best-seller-item-wrap{
+    margin-top: 70px;
+    gap: 100px;
+}
+
+.best-seller .single-item img{
+    width: 100%;
+    max-width: 250px;
+    background: #ffc200;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 #333;
+}
+
+.best-seller .single-item h3{
+    font-size: 40px;
+    color: #333333;
+    margin: 15px 0;
+}
+
+.best-seller .single-item p{
+    font-size: 16px;
+}
+
+
+/* Oriental Taste CSS */
+.img_txt_box{
+    text-align: left;
+    background: url(imgs/oriental_taste_bg.png) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.img_txt_box .oriental-taste-wrap .single-test-left{
+    flex-basis: 40%;
+}
+
+.img_txt_box .oriental-taste-wrap .single-test-left img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.img_txt_box .oriental-taste-wrap .single-test-right{
+    flex-basis: 60%;
+    padding-top: 100px;
+}
+
+.img_txt_box .oriental-taste-wrap .single-taste .title-box h2{
+    margin-bottom: 20px;
+}
+
+.img_txt_box .oriental-taste-wrap .single-taste .title-box p{
+    color: #fff;
+    margin: 40px 0;
+    margin-top: 0;
+}
+
+.img_txt_box .oriental-taste-wrap .single-taste .title-box{
+    padding-left: 100px;
+    max-width: 550px;
+    text-align: left;
+}
+
+
+/* Statistics CSS */
+.statistics{
+    padding: 60px 0;
+    background: url(imgs/statistics.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #303030;
+}
+
+.statistics p{
+    color: #fff;
+}
+
+.statistics .statistics-wrap{
+    padding: 40px 0;
+    margin-top: 60px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.statistics .statistics-wrap .single-statistics .stat-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 230px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+}
+
+.statistics .statistics-wrap .single-statistics .stat-container span{
+    color: #ffc200;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.statistics .statistics-wrap .single-statistics .stat-container p{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+/* Chicken Grill CSS */
+.chicken_grill{
+    background-image: url(imgs/chicken_girll_bg.png);
+    background-position: bottom center;
+    padding: 140px 0;
+    padding-bottom: 80px;
+
+}
+
+.chicken_grill .oriental-taste-wrap .single-test-left{
+    flex-basis: 60%;
+    padding-top: 60px;
+}
+
+.chicken_grill .oriental-taste-wrap .single-test-left .title-box{
+    padding-left: 0;
+}
+
+.chicken_grill .oriental-taste-wrap .single-test-right{
+    flex-basis: 40%;
+    padding-top: 0;
+}
+
+
+/* Testimonial CSS */
+.review{
+    background: linear-gradient(#ffc400d8, #ffc400d8), url(imgs/review_bg.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 200px 50px;
+    margin-top: 100px;
+}
+
+.review .container{
+    align-items: center;
+}
+
+.review p{
+    font-size: 34px;
+}
+
+.review h3{
+    font-size: 54px;
+    margin-top: 30px;
+}
+
+
+/* Subscribe CSS */
+.subscribe{
+    background: url(imgs/statistics.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 120px 0;
+    margin: 40px 0;
+}
+
+.subscribe form {
+    max-width: 850px;
+    margin: 60px auto;
+    box-shadow: 0 0 20px 10px #f1f1f1;
+}
+
+.subscribe form input{
+    flex-basis: 100%;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+}
+
+.subscribe form input::placeholder{
+    color: #333;
+}
+
+.subscribe form button{
+    border-radius: 0 5px 5px 0;
+    font-size: 22px;
+}
+
+.subscribe form input:focus{
+    outline: 0;
+    background: #ecebeb;
+}
+
+
+/* Footer CSS */
+footer{
+    background: #303030;
+}
+
+footer .container{
+    padding: 150px 0;
+}
+
+footer h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer p, footer a{
+    color: #fff;
+    font-size: 21px;
+}
+
+footer ul li{
+    margin-bottom: 14px;
+}
+
+footer ul li a{
+    font-size: 18px;
+}
+
+footer .copyright{
+    text-align: center;
+    font-size: 22px;
+    background-color: #484646;
+    padding: 20px 0;
+}
+
+footer .copyright a{
+    color: #ffc200;
+}
+
+footer .single-footer-item{
+    flex-basis: 17%;
+}
+
+footer .single-footer-item:first-child{
+    flex-basis: 51%;
+    padding-right: 160px;
+}
+
+footer .single-footer-item .socials{
+    margin-top: 40px;
+}
+
+footer .single-footer-item .socials a{
+    margin-right: 10px;
+}
+
+footer .single-footer-item .socials a img{
+    border-radius: 50%;
+    transition: .2s;
+}
+
+footer .single-footer-item .socials a:hover img{
+    background: #fb00ff;
+}
