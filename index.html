@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Food</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <nav class="container flex">
             <a href="#"><img src="imgs/logo.png" alt="Logo"></a>
 
-            <ul class="flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Promo</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><img src="imgs/srch.png" alt="Search"></a></li>
-            </ul>
+            <label for="toggler">
+                <input type="checkbox" id="toggler">
+                <button id="toggler_fake"><img src="imgs/angle.png" alt="Angle"></button>
+                <ul class="flex nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </label>
         </nav>
 
         <section class="container banner">
@@ -85,28 +89,28 @@
                 <div class="flex statistics-wrap">
                     <div class="single-statistics">
                         <div class="flex stat-container">
-                            <span>123</span>
+                            <span id="numberOfOutlets">123</span>
                             <p>Outlets</p>
                         </div>
                     </div>
                     
                     <div class="single-statistics">
                         <div class="flex stat-container">
-                            <span>100</span>
+                            <span id="numberOfChefs">100</span>
                             <p>Chefs</p>
                         </div>
                     </div>
                     
                     <div class="single-statistics">
                         <div class="flex stat-container">
-                            <span>300</span>
+                            <span id="numberOfMenu">300</span>
                             <p>Menu</p>
                         </div>
                     </div>
                     
                     <div class="single-statistics">
                         <div class="flex stat-container">
-                            <span>30</span>
+                            <span id="numberOfCountries">30</span>
                             <p>Countries</p>
                         </div>
                     </div>
@@ -208,5 +212,36 @@
 
         <p class="copyright">&copy; Designed by <a target="_blank" href="http://www.freepik.com/">Freepik</a></p>
     </footer>
+
+    <script>
+        const selector = id => document.querySelector('#'+id);
+        const completedCounts = [];
+        window.onscroll = ()=>{
+            intervalInit('numberOfOutlets');
+            intervalInit('numberOfChefs');
+            intervalInit('numberOfMenu');
+            intervalInit('numberOfCountries');
+        }
+
+        const intervalInit = id =>{
+            const visualPoint = selector(id).offsetTop - window.innerHeight;
+            if(completedCounts.includes(id) || window.scrollY<visualPoint)return;
+
+            let i=0;
+            let interval;
+            const range = parseInt(selector(id).textContent);
+            selector(id).textContent = 0;
+            const callbackTime = Math.round(2000/range);
+            completedCounts.push(id);
+
+            interval = setInterval(()=>{
+                i++;
+                if (i === range)clearInterval(interval);
+                selector(id).textContent = i;
+            }, callbackTime);
+
+        }
+
+    </script>
 </body>
 </html>

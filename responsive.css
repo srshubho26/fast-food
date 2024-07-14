@@ -1,0 +1,397 @@
+@media only screen and (max-width: 1140px){
+    header .banner-contents {
+        margin: 60px 0 60px auto;
+    }
+
+    .best-seller {
+        margin: 50px auto;
+    }
+
+    .best-seller .best-seller-item-wrap {
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-test-right {
+        padding-top: 30px;
+    }
+
+    .statistics .statistics-wrap {
+        margin-top: 0;
+    }
+
+    .chicken_grill {
+        padding: 80px 0;
+    }
+
+    .review {
+        padding: 100px 50px;
+    }
+
+    .subscribe {
+        padding: 60px 0;
+    }
+
+    footer .container {
+        padding: 100px 10px;
+    }
+
+    footer .single-footer-item:first-child {
+        padding-right: 50px;
+    }
+
+    footer p{
+        font-size: 1.2em;
+    }
+
+    footer ul li a {
+        font-size: 1em;
+    }
+
+    footer .single-footer-item .socials {
+        margin-top: 2em;
+    }
+
+}
+
+
+@media only screen and (max-width: 1080px){
+    .title-box h2 {
+        font-size: 4em;
+    }
+
+    .title-box p {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 1.3em;
+    }
+
+    header .banner-contents{
+        width: 50%;
+    }
+
+    header .banner h1 {
+        font-size: 6em;
+    }
+
+    header .banner p {
+        font-size: 1.5em;
+    }
+
+    .best-seller .single-item h3 {
+        font-size: 2.5em;
+        margin: .2em 0;
+    }
+
+    .statistics .statistics-wrap {
+        gap: 20px;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-taste .title-box h2 {
+        margin-bottom: .2em;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-test-right img {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .btn {
+        padding: 10px 30px;
+    }
+
+    .title-box h2 {
+        font-size: 3em;
+    }
+
+    .title-box p {
+        font-size: 1.3em;
+    }
+
+    header #toggler{
+        opacity: 0;
+        z-index: 3;
+    }
+
+    header #toggler, header #toggler_fake {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 100px;
+        width: 35px;
+        background: #3c1d3ff3;
+        height: 80px;
+        border: none;
+        padding: 5px;
+        transition: .2s;
+        border-radius: 5px 0 0 5px;
+    }
+
+    header #toggler_fake img{
+        width: 100%;
+    }
+
+    header nav ul.nav-list{
+        position: fixed;
+        right: -300px;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        background: #3c1d3ff3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+    }
+
+    header input#toggler:checked, header input#toggler:checked ~ #toggler_fake{
+        right: 250px;
+    }
+
+    header input#toggler:checked ~ #toggler_fake img{
+        transform: rotateY(180deg);
+    }
+
+    header input#toggler:checked ~ ul.nav-list{
+        right: 0;
+    }
+
+    header .banner-contents {
+        margin: 30px 0 30px auto;
+    }
+
+    header .banner h1 {
+        font-size: 4em;
+    }
+
+    header .banner p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+
+    .flex.best-seller-item-wrap .single-item {
+        padding: 0 15px;
+    }
+
+    .best-seller .single-item h3 {
+        font-size: 2em;
+    }
+
+    .statistics .statistics-wrap {
+        padding: 20px 0;
+    }
+
+    .statistics .statistics-wrap .single-statistics .stat-container {
+        width: 170px;
+        height: 170px;
+    }
+
+    .statistics .statistics-wrap .single-statistics .stat-container span {
+        font-size: 2.2em;
+    }
+
+    .statistics .statistics-wrap .single-statistics .stat-container p {
+        font-size: 1em;
+    }
+
+    .img_txt_box{
+        padding-bottom: 10px;
+    }
+    
+    .img_txt_box .oriental-taste-wrap{
+        flex-wrap: wrap;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-test-right {
+        flex-basis: 56%;
+        padding-top: 0;
+    }
+
+    .chicken_grill {
+        padding-top: 10px;
+        padding-bottom: 70px;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-test-left, .chicken_grill .oriental-taste-wrap .single-test-right {
+        flex-basis: 40%;
+        padding-top: 0;
+    }
+
+    .chicken_grill .oriental-taste-wrap .single-test-left{
+        flex-basis: 56%;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-taste .title-box {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .title-box p {
+        font-size: 1.2em;
+        margin: 20px 0;
+    }
+
+    .review {
+        padding: 50px;
+    }
+
+    .subscribe {
+        padding: 20px 0;
+    }
+
+    .subscribe form{
+        max-width: 750px;
+    }
+
+    footer .container {
+        padding: 50px 10px;
+    }
+
+    footer .footer-items-wrap{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    footer .single-footer-item{
+        flex-basis: 30%;
+    }
+
+    footer .single-footer-item:first-child {
+        padding: 10px;
+        flex-basis: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header .banner-contents {
+        margin: 30px 0 30px auto;
+        width: 100%;
+        background: #514c4cb8;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .best-seller .best-seller-item-wrap {
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex.best-seller-item-wrap .single-item {
+        padding: 0 20px;
+        max-width: 280px;
+    }
+
+    .img_txt_box {
+        padding-top: 0;
+        margin-top: 100px;
+    }
+
+    .img_txt_box .oriental-taste-wrap {
+        justify-content: center;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-test-left{
+        flex-basis: 60%;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-test-right {
+        flex-basis: 90%;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .img_txt_box .oriental-taste-wrap .single-taste .title-box {
+        text-align: center;
+    }
+
+    .statistics {
+        padding: 5px 0;
+    }
+
+    .statistics .statistics-wrap {
+        flex-wrap: wrap;
+    }
+
+    .chicken_grill {
+        padding-top: 50px;
+        margin-top: 0;
+        padding-bottom: 150px;
+    }
+
+    .chicken_grill .oriental-taste-wrap{
+        flex-direction: column-reverse;
+        gap: 120px;
+    }
+
+    .chicken_grill .oriental-taste-wrap .single-test-right{
+        flex-basis: 60%;
+    }
+
+    .chicken_grill .oriental-taste-wrap .single-test-right img {
+        width: 60%;
+    }
+
+    .review {
+        margin-top: 20px;
+    }
+
+    .subscribe form {
+        max-width: 500px;
+    }
+
+    footer .footer-items-wrap {
+        gap: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .chicken_grill .oriental-taste-wrap {
+        gap: 15px;
+    }
+
+    .review {
+        padding: 10px 0;
+    }
+
+    .subscribe {
+        margin: 10px 0;
+    }
+
+    .subscribe form{
+        flex-wrap: wrap;
+        box-shadow: none;
+        gap: 10px;
+    }
+
+    .subscribe form input {
+        box-shadow: 0 0 20px 10px #f1f1f1;
+        max-width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .subscribe form button{
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    footer .single-footer-item {
+        flex-basis: 50%;
+    }
+
+    footer .single-footer-item:first-child {
+        padding: 0;
+        flex-basis: 100%;
+    }
+}
